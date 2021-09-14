@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .content{
+            border: collapse;
+            margin: 25px 0;
+            font-size: 0.5cm;
+            width: 60%; 
+            border-radius: 5px,5px,0,0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 400px;
+            margin-left: 20%;
+        
+
+        }
+
+        .content table,th {
+            background-color: #009884;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .content th,td{
+            padding: 12px 15px;
+        }
+
+        .content table,tr{
+            border-bottom: 1px solid #dddddd;
+            background-color: #ffffff;
+       } 
+
+       .content table, tr:nth-of-type(odd) {
+           background-color: #f3f3f3f3;
+       }
+
+       .content table,tr:last-of-type{
+        
+        border-bottom: 2px solid #009884;
+
+       }
+
+       .content table,tr.active-row {
+           font-weight: bold;
+           color: #009879;
+       }
+       
+    
+    </style>
+</head>
+<body>
+    <h1 style="border-bottom: 1px solid #dddddd; font-family: Arial, Helvetica, sans-serif;
+    color: #009884; text-align: center; font-weight: bold;">Styling HTML Table vs CSS</h1>
+
+    <table class="content" >
+     
+         <th>Rank</th>
+
+         <th>Name</th>
+         <th>Pointer</th>
+         <th>Team</th>
+
+        <tr>
+            <td>1</td>
+            <td>Bhagyashree</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+     
+        <tr class="active-row">
+            <td>2</td>
+            <td>Piyusha</td>
+            <td>72,400</td>
+            <td>dcode</td>
+        </tr>
+     
+        <tr>
+            <td>3</td>
+            <td>Nick</td>
+            <td>45,780</td>
+            <td>student</td>
+        </tr>
+     
+        <tr class="active-row">
+            <td>4</td>
+            <td>Vaidai</td>
+            <td>68,900</td>
+            <td>dcode</td>
+        </tr>
+     
+        <tr>
+            <td>5</td>
+            <td>Jenny</td>
+            <td>89,590</td>
+            <td>dcode</td>
+        </tr>
+     
+    </table>
+</body>
+</html>
